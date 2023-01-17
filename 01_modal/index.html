@@ -40,13 +40,17 @@
       var modal = $('.modal')
 
       open.click(function () {
-        dimm.show()
-        modal.show()
+        // dimm.show()
+        // modal.show()
+        dimm.fadeIn()
+        modal.fadeIn()
       })
 
       close.click(function () {
-        dimm.hide()
-        modal.hide()
+        // dimm.hide()
+        // modal.hide()
+        dimm.fadeOut()
+        modal.fadeOut()
       })
     </script>
   </body>

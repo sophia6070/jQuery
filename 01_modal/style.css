@@ -26,7 +26,8 @@
 }
 
 .modal {
-  width: 600px;
+  max-width: 600px;
+  width: 90%;
   background-color: #fff;
   position: absolute;
   top: 50%;
