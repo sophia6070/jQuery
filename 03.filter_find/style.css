@@ -65,3 +65,15 @@ h1 {
 .cards li:nth-child(3) p {
   left: -100%;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
