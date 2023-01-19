@@ -28,10 +28,17 @@
       </div>
 
       <!-- slide -->
-      <div class="slide_01">
-        <div class="item item_01"></div>
-        <div class="item item_02"></div>
-        <div class="item item_03"></div>
+      <div class="slider">
+        <div class="slide_01">
+          <div class="item item_01"></div>
+          <div class="item item_02"></div>
+          <div class="item item_03"></div>
+        </div>
+
+        <div class="btns">
+          <img class="prev" src="../images/prev_btn.png" alt="" />
+          <img class="next" src="../images/next_btn.png" alt="" />
+        </div>
       </div>
 
       <!-- main -->
@@ -99,7 +106,11 @@
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
-      $('.slide_01').slick({})
+      $('.slide_01').slick({
+        dots: true,
+        nextArrow: $('.next'),
+        prevArrow: $('.prev'),
+      })
     </script>
   </body>
 </html>
