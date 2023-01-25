@@ -146,6 +146,7 @@
           그러나 까닭입니다. 덮어 위에 이런 헤는 잠, 봅니다.
         </p>
       </div>
+      <div class="dimm"></div>
     </div>
 
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -178,6 +179,18 @@
       $('.go_top').click(function () {
         $('html').animate({ scrollTop: 0 }, 400)
       })
+    </script>
+
+    <script>
+      $('.nav')
+        .on('mouseenter', function () {
+          $(this).parent().stop().animate({ height: 350 }, 'fast')
+          $('.dimm').addClass('active')
+        })
+        .on('mouseleave', function () {
+          $(this).parent().stop().animate({ height: 80 }, 'fast')
+          $('.dimm').removeClass('active')
+        })
     </script>
   </body>
 </html>
